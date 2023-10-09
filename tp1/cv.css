@@ -13,7 +13,7 @@ table {
     background-color: white;
 }
 
-tr:nth-child(even){
+tr:nth-child(odd){
     color: brown;
 }
 
