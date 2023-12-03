@@ -1,7 +1,7 @@
 window.onload = function () {   // ce code est exécuter une fois que toute la page est téléchargée par le navigateur
     // voir plus : https://www.w3schools.com/js/js_htmldom.asp
     console.log("DOM ready!");
-
+    displayContactList();
 };
 
 function validate() {
@@ -59,10 +59,11 @@ function validate() {
     document.getElementById("target-map-url").href = map_data['url'];
     document.getElementById("target-address").textContent = address;
 
-    let dataModal = new bootstrap.Modal(document.getElementById('dataModal'));
-    dataModal.show();
+    // Disabling modal
+    // let dataModal = new bootstrap.Modal(document.getElementById('dataModal'));
+    // dataModal.show();
 
-    contactStore.add()
+    contactStore.add(last_name, first_name, birthdayDate, address, email);
 
     return false;
 

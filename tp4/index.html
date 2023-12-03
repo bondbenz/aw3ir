@@ -58,9 +58,30 @@
                     <span id="email-chars">0</span> car.
                 </div>
             </div>
-
-            <button type="submit" class="btn btn-primary">Valider</button>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
         </form>
+        <br>
+        <div class="alert alert-success" id="added-msg" hidden>Contact ajouté avec succès</div>
+        <div class="alert alert-danger" id="reset-msg" hidden>Liste des contacts supprimé.</div>
+        <div class="row">
+            <h3>Liste des contacts (<span id="contacts-number"></span>) <button class="btn btn-primary" type="button" onclick="contactStore.reset()">Reset</button></h3>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nom</th>
+                            <th>Prénom</th>
+                            <th>Date de naissance</th>
+                            <th>Adresse</th>
+                            <th>Mail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
 
 
@@ -106,6 +127,7 @@
     <!-- my scripts are here -->
     <script src="js/form-validation.js"></script>
     <script src="js/gps.js"></script>
+    <script src="js/store.js"></script>
 </body>
 
 </html>
